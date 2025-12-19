@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 
 # Load the CSV file
-df = pd.read_csv("C:/Users/sudhe/OneDrive/Desktop/Social Web Analytics Group Project/ball_by_ball_data.csv")
+df = pd.read_csv("../data/processed/ball_by_ball_data.csv")
 
 # Filter for IPL matches (you can adjust this if needed)
 ipl_df = df[df['series'].str.contains("Indian Premier League", na=False)]
@@ -273,3 +273,4 @@ plt.tight_layout()
 plt.show()
 
 # %%
+
