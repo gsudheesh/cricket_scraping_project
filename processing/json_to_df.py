@@ -257,9 +257,10 @@ def save_df_to_csv(df, csv_path):
     # Save the DataFrame
     df.to_csv(csv_path, mode='a', header=not file_exists, index=False)
 
-folder_path = "C:/Users/sudhe/OneDrive/Desktop/Social Web Analytics Group Project/rem_matches"
+folder_path = "../data/raw/rem_matches"
 df = process_all_json_files(folder_path)
 
-csv_path = "C:/Users/sudhe/OneDrive/Desktop/Social Web Analytics Group Project/ball_by_ball_data.csv"
+csv_path = "../data/processed/ball_by_ball_data.csv"
 save_df_to_csv(df, csv_path)
+
 
