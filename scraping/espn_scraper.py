@@ -198,10 +198,11 @@ async def main(folder_path, final_matches):
 import time
 start = time.time()
 
-folder_path = "C:/Users/sudhe/OneDrive/Desktop/rem_matches"
+folder_path = "../data/raw/rem_matches"
 final_matches = [
     ['1449924', '1473440'],
 ]
 
 asyncio.run(main(folder_path, final_matches))
 print(time.time() - start)
+
